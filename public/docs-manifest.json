@@ -1,0 +1,43 @@
+{
+  "product": "MusicXR",
+  "prepared": "2026-06-21",
+  "docs": [
+    {
+      "id": "platform",
+      "title": "Platform Plan",
+      "file": "MUSICXR_PLATFORM_PLAN.md",
+      "summary": "Product vision, user groups, asset and token model, royalty operations, compliance concerns, MVP scope, risks, and launch readiness.",
+      "accent": "blue",
+      "href": "plan-docs/MUSICXR_PLATFORM_PLAN.md",
+      "lineCount": 1807,
+      "byteSize": 53172
+    },
+    {
+      "id": "technology",
+      "title": "Technology Plan",
+      "file": "MUSICXR_TECHNOLOGY_PLAN.md",
+      "summary": "Flutter, Firebase, Firestore, Cloud Functions, security model, vendor stack, design system, CI/CD, testing, and app-store readiness.",
+      "accent": "green",
+      "href": "plan-docs/MUSICXR_TECHNOLOGY_PLAN.md",
+      "lineCount": 2104,
+      "byteSize": 52864
+    },
+    {
+      "id": "implementation-gtm",
+      "title": "Implementation And GTM Plan",
+      "file": "MUSICXR_IMPLEMENTATION_GTM_PLAN.md",
+      "summary": "Execution phases, team model, operating cadence, MVP backlog, pilot strategy, launch audiences, channels, metrics, risks, and next actions.",
+      "accent": "coral",
+      "href": "plan-docs/MUSICXR_IMPLEMENTATION_GTM_PLAN.md",
+      "lineCount": 2026,
+      "byteSize": 49570
+    }
+  ],
+  "image": {
+    "title": "Source Business Diagram",
+    "file": "business-doc.png",
+    "summary": "Original MusicXR ecosystem visual used to derive the planning documents.",
+    "href": "plan-docs/business-doc.png",
+    "byteSize": 1719691
+  }
+}
