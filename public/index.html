@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="MusicXR planning portal for platform, technology, implementation, and go-to-market documents."
+    >
+    <title>MusicXR Planning Portal</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Planning documents">
+        <a class="brand" href="#platform" aria-label="MusicXR planning portal home">
+          <span class="brand-mark">MXR</span>
+          <span>
+            <strong>MusicXR</strong>
+            <small>Planning Portal</small>
+          </span>
+        </a>
+
+        <figure class="diagram-preview">
+          <img id="diagramPreview" src="/plan-docs/business-doc.png" alt="MusicXR ecosystem diagram">
+          <figcaption>Source business diagram</figcaption>
+        </figure>
+
+        <label class="filter-label" for="docFilter">Filter docs</label>
+        <input id="docFilter" class="filter-input" type="search" placeholder="Platform, tech, GTM">
+
+        <nav id="docNav" class="doc-nav" aria-label="Document list"></nav>
+
+        <div class="sidebar-actions" aria-label="Document actions">
+          <button id="copyLinkButton" class="icon-button" type="button" title="Copy link">Copy Link</button>
+          <button id="printButton" class="icon-button" type="button" title="Print document">Print</button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <section class="workspace-header" aria-labelledby="workspaceTitle">
+          <div>
+            <p class="eyebrow">Pre-build planning workspace</p>
+            <h1 id="workspaceTitle">MusicXR Platform Plans</h1>
+            <p class="workspace-summary">
+              A readable web surface for the platform thesis, serverless technology plan, and implementation
+              and go-to-market roadmap.
+            </p>
+          </div>
+
+          <dl class="status-grid" aria-label="Planning status">
+            <div>
+              <dt>Stage</dt>
+              <dd>Pre-build</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Flutter + Firebase</dd>
+            </div>
+            <div>
+              <dt>Principle</dt>
+              <dd>Trust before liquidity</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="reader-tools" aria-label="Reader tools">
+          <div class="current-doc">
+            <span id="docAccent" class="doc-accent"></span>
+            <div>
+              <h2 id="docTitle">Loading planning document...</h2>
+              <p id="docSummary">Preparing the planning portal.</p>
+            </div>
+          </div>
+
+          <div class="tool-row">
+            <label class="reader-search-label" for="readerSearch">Find in document</label>
+            <input id="readerSearch" class="reader-search" type="search" placeholder="Search current doc">
+            <a id="rawDocLink" class="text-button" href="/plan-docs/MUSICXR_PLATFORM_PLAN.md">Raw MD</a>
+          </div>
+        </section>
+
+        <section class="content-layout">
+          <article id="documentContent" class="document-content" aria-live="polite"></article>
+          <aside class="toc-panel" aria-label="Document outline">
+            <h2>Outline</h2>
+            <nav id="tocNav" class="toc-nav"></nav>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

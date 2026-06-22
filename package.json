@@ -1,0 +1,13 @@
+{
+  "name": "musicxr-planning-portal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static planning-doc viewer for the MusicXR platform plans.",
+  "type": "module",
+  "scripts": {
+    "docs:sync": "node scripts/sync-plan-docs.mjs",
+    "serve": "python3 -m http.server 5173 --directory public",
+    "preview": "npm run docs:sync && npm run serve",
+    "deploy": "npm run docs:sync && firebase deploy --only hosting"
+  }
+}
